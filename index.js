@@ -1,12 +1,21 @@
 
 const Manager = require('./lib/Manager')
+const Engineer = require('./lib/Engineer')
+const Intern = require('./lib/Intern')
+const Employee = require('./lib/Employee')
+
 const {prompt} = require('inquirer')
 const fs = require('fs')
 const path = require('path')
-const { listenerCount } = require('process')
 
-function init(){
+const dist_folder = path.resolve(__dirname, 'dist')
+const dist_path = path.join(dist_folder, 'index.html')
+
+const render = require('./src/page-template')
+
 const teamArray = []
+function init(){
+
 
 function chooseNextEmployee(){
 prompt([{
@@ -16,11 +25,11 @@ prompt([{
 }])
 .then(({nextRole})=>{
     switch(nextRole){
-        case 'Intern':
-            createIntern()
-        break;
         case 'Engineer':
             createEngineer()
+        break;
+        case 'Intern':
+            createIntern()
         break;
         case 'Print':
         printEmployees()
@@ -92,7 +101,7 @@ function createIntern() {
           {
             type:'input',
             name: 'school',
-            message: 'What is your Email address?'
+            message: 'What is your School name?'
         },
       
       ]
@@ -129,6 +138,11 @@ function createEngineer() {
               name: 'email',
               message: 'What is your Email address?'
           },
+          {
+            type: 'input',
+            name: 'github',
+            message: 'What is your Github username?'
+          }
       
       ]
     )
@@ -147,7 +161,10 @@ function createEngineer() {
   }
 
 function printEmployees(){
-
+  if (!fs.existsSync(dist_folder)) {
+    fs.mkdirSync(dist_folder)
+  }
+  fs.writeFileSync(dist_path, render(teamArray))
 }
 console.log(`
 |==========================|

@@ -1,4 +1,7 @@
-test("Can Create a new Employee Object using Constructor", ()=>{
-    const e = new Employee();
-    expect(e.getRole()).toBe("Employee")
+const Manager = require('../lib/Manager')
+
+
+test("Can Create a new Manager Object using Constructor", ()=>{
+    const e = new Manager();
+    expect(e.getRole()).toBe('Manager')
 })
