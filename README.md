@@ -8,6 +8,7 @@ Email and GitHub. When displayed you are linked to their Email and GitHub. We ar
 ## Table of Contents
 * [Snapshot](#snapshot)
 * [Installation](#installation)
+* [Usage](#usage)
 * [License](#license)
 * [Tests](#tests)
 * [Questions](#questions)
@@ -17,6 +18,9 @@ Email and GitHub. When displayed you are linked to their Email and GitHub. We ar
 
 ## Installation
 To use, clone the repository from GitHub then download Node. This application requires a file system and installation of inquirer module. If testing is required install Jest.
+
+## Usage
+To generate your team, open your terminal and run 'npm start'. Follow the on screen prompts and when done select print.
 
 ## License 
 This application is protected under the MIT license.
