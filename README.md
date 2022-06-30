@@ -33,4 +33,4 @@ run 'npm run test'
 If you have any questions about this project please contact me at tribenation13@gmail.com
 
 ## Demonstration
-<mp4 src='./assets/Untitled_ Jun 30, 2022 12_25 AM.mp4'>
+Download MP4 file in assets folder to view walkthrough video
