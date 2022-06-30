@@ -6,15 +6,15 @@ test("can assign a name to the intern", ()=>{
     const e = new Intern(testname);
     expect(e.getName()).toBe(testname);
 })
-test("can assign an id to the intern", ()=>{
-    const testid = 123;
-    const e = new Intern('Josh', testid);
-    expect(e.getId()).toBe(testid);
-})
 test("can assign an email to the intern", ()=>{
     const testemail = 'test@gmail.com';
-    const e = new Intern('Josh', 123, testemail);
+    const e = new Intern('Josh', testemail);
     expect(e.getEmail()).toBe(testemail);
+})
+test("can assign an id to the intern", ()=>{
+    const testid = 123;
+    const e = new Intern('Josh', 'test@gmail.com', testid);
+    expect(e.getId()).toBe(testid);
 })
 test("can assign a school to the intern", ()=>{
     const testschool = 'UNCC';
