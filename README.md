@@ -1,18 +1,29 @@
 # team-info-generator
-GIVEN a command-line application that accepts user input
-WHEN I am prompted for my team members and their information
-THEN an HTML file is generated that displays a nicely formatted team roster based on user input
-WHEN I click on an email address in the HTML
-THEN my default email program opens and populates the TO field of the email with the address
-WHEN I click on the GitHub username
-THEN that GitHub profile opens in a new tab
-WHEN I start the application
-THEN I am prompted to enter the team manager’s name, employee ID, email address, and office number
-WHEN I enter the team manager’s name, employee ID, email address, and office number
-THEN I am presented with a menu with the option to add an engineer or an intern or to finish building my team
-WHEN I select the engineer option
-THEN I am prompted to enter the engineer’s name, ID, email, and GitHub username, and I am taken back to the menu
-WHEN I select the intern option
-THEN I am prompted to enter the intern’s name, ID, email, and school, and I am taken back to the menu
-WHEN I decide to finish building my team
-THEN I exit the application, and the HTML is generated
+![Github licence](http://img.shields.io/badge/license-MIT-blue.svg)
+
+## Description
+This application utilizes node package: inquirer to gather information from a user and create cards displaying their role, employee ID 
+Email and GitHub. When displayed you are linked to their Email and GitHub. We are also using NPM jest to run test to ensure our data is collected correctly.
+
+## Table of Contents
+* [Snapshot](#snapshot)
+* [Installation](#installation)
+* [License](#license)
+* [Tests](#tests)
+* [Questions](#questions)
+
+## Snapshot
+<img src='./assets/Screen Shot 2022-06-29 at 11.30.02 PM.png'>
+
+## Installation
+To use, clone the repository from GitHub then download Node. This application requires a file system and installation of inquirer module. If testing is required install Jest.
+
+## License 
+This application is protected under the MIT license.
+
+## Tests
+run 'npm run test'
+
+## Questions 
+If you have any questions about this project please contact me at tribenation13@gmail.com
+

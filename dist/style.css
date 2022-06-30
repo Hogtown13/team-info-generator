@@ -1,0 +1,18 @@
+header{
+    background-color:rgb(108, 183, 202);
+    margin: 30px;
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+}
+
+.card {
+    margin: 15px;
+    
+}
+.card-header {
+    background-color: rgb(108, 183, 202);
+   
+}
+
